@@ -143,19 +143,20 @@ footer{margin-top:28px;color:var(--mute);font-size:13px}
 </div>
 
 <script>
-/* ===== CONFIGURACIÓN: edita solo este bloque ===== */
+
+//BLOQUE DE CONFIGURACIÓN
 const CONFIG = {
   // Enlace CSV de la pestaña «Inventario» (Archivo > Compartir > Publicar en la Web > CSV)
-  CSV_URL: "",
+  CSV_URL: "https://docs.google.com/spreadsheets/d/e/2PACX-1vRs0nlmbLwM0U_h4mJo58nTqI3stZ_CQygGp8splpDQHWLSGxHBY1u5ZIykrrvDssr0N3ywMe9aCjbK/pub?gid=2029664608&single=true&output=csv",
   // Enlace normal de tu Google Sheets (para el botón «Editar»)
-  SHEET_URL: "",
+  SHEET_URL: "https://docs.google.com/spreadsheets/d/1n1ghy1DkkUMkw_i6dcpGlTWUlZIHNx4m7tB262x5paE/edit",
   // Se avisa como «quedan pocos» cuando las disponibles son iguales o menores a este número
   LOW_STOCK: 2,
   // Cada cuánto se vuelve a leer la hoja (milisegundos)
   REFRESH_MS: 60000
 };
 
-/* ===== Datos de ejemplo (se usan mientras CSV_URL esté vacío) ===== */
+/* ===== Datos de ejemplo (se usan mientras CSV_URL esté vacío) ===== 
 const DEMO_CSV = `ID,Nombre,Categoría,Cantidad total,Disponibles,En uso,Dañados / por reemplazar,Estado,Ubicación,Última revisión,Notas
 1,Arduino UNO R3,Microcontroladores,20,12,8,0,Bueno,Estante A1,2026-11-10,
 2,ESP32 DevKit,Microcontroladores,8,6,2,0,Bueno,Estante A1,2026-11-10,
@@ -171,7 +172,7 @@ const DEMO_CSV = `ID,Nombre,Categoría,Cantidad total,Disponibles,En uso,Dañado
 12,Cables dupont (paquete),Cables,40,22,18,0,Bueno,Caja C1,2026-11-10,
 13,Protoboard 830 puntos,Cables,22,15,6,1,Medio dañado,Caja C1,2026-11-10,
 14,Soldador de estaño,Herramientas,4,4,0,0,Bueno,Armario 2,2026-11-12,
-15,Alicate de corte,Herramientas,6,5,0,1,Medio dañado,Armario 2,2026-11-12,Filo desgastado`;
+15,Alicate de corte,Herramientas,6,5,0,1,Medio dañado,Armario 2,2026-11-12,Filo desgastado`;*/
 
 /* ===== Utilidades ===== */
 const $ = id => document.getElementById(id);
